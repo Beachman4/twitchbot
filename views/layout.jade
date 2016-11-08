@@ -1,0 +1,162 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/adminlte/css/AdminLTE.min.css')
+    link(rel='stylesheet', href='/adminlte/css/skins/_all-skins.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat')
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    script(src='/adminlte/js/app.min.js')
+
+  body(class="skin-blue")
+      header.main-header
+          a.logo(href='../../index2.html')
+              // LOGO
+              | Placeholder Name
+          // Header Navbar: style can be found in header.less
+          nav.navbar.navbar-static-top(role='navigation')
+              // Navbar Right Menu
+              .navbar-custom-menu
+                  ul.nav.navbar-nav
+                      // Messages: style can be found in dropdown.less
+                      li.dropdown.messages-menu
+                          a.dropdown-toggle(href='#', data-toggle='dropdown')
+                              i.fa.fa-envelope-o
+                              span.label.label-success 4
+                          ul.dropdown-menu
+                              li.header You have 4 messages
+                              li
+                                  // inner menu: contains the actual data
+                                  ul.menu
+                                      li
+                                          // start message
+                                          a(href='#')
+                                              .pull-left
+                                                  img.img-circle(src='/adminlte/img/user2-160x160.jpg', alt='User Image')
+                                              h4
+                                                  | Sender Name
+                                                  small
+                                                      i.fa.fa-clock-o
+                                                      |  5 mins
+                                              p Message Excerpt
+                                      // end message
+                                      | ...
+                              li.footer
+                                  a(href='#') See All Messages
+                      // Notifications: style can be found in dropdown.less
+                      li.dropdown.notifications-menu
+                          a.dropdown-toggle(href='#', data-toggle='dropdown')
+                              i.fa.fa-bell-o
+                              span.label.label-warning 10
+                          ul.dropdown-menu
+                              li.header You have 10 notifications
+                              li
+                                  // inner menu: contains the actual data
+                                  ul.menu
+                                      li
+                                          a(href='#')
+                                              i.ion.ion-ios-people.info
+                                              |  Notification title
+                                      |                 ...
+                              li.footer
+                                  a(href='#') View all
+                      // Tasks: style can be found in dropdown.less
+                      li.dropdown.tasks-menu
+                          a.dropdown-toggle(href='#', data-toggle='dropdown')
+                              i.fa.fa-flag-o
+                              span.label.label-danger 9
+                          ul.dropdown-menu
+                              li.header You have 9 tasks
+                              li
+                                  // inner menu: contains the actual data
+                                  ul.menu
+                                      li
+                                          // Task item
+                                          a(href='#')
+                                              h3
+                                                  | Design some buttons
+                                                  small.pull-right 20%
+                                              .progress.xs
+                                                  .progress-bar.progress-bar-aqua(style='width: 20%', role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                                                      span.sr-only 20% Complete
+                                      // end task item
+                                      | ...
+                              li.footer
+                                  a(href='#') View all tasks
+                      // User Account: style can be found in dropdown.less
+                      li.dropdown.user.user-menu
+                          a.dropdown-toggle(href='#', data-toggle='dropdown')
+                              img.user-image(src='/adminlte/img/user2-160x160.jpg', alt='User Image')
+                              span.hidden-xs Alexander Pierce
+                          ul.dropdown-menu
+                              // User image
+                              li.user-header
+                                  img.img-circle(src='/adminlte/img/user2-160x160.jpg', alt='User Image')
+                                  p
+                                      | Alexander Pierce - Web Developer
+                                      small Member since Nov. 2012
+                              // Menu Body
+                              li.user-body
+                                  .col-xs-4.text-center
+                                      a(href='#') Followers
+                                  .col-xs-4.text-center
+                                      a(href='#') Sales
+                                  .col-xs-4.text-center
+                                      a(href='#') Friends
+                              // Menu Footer
+                              li.user-footer
+                                  .pull-left
+                                      a.btn.btn-default.btn-flat(href='#') Profile
+                                  .pull-right
+                                      a.btn.btn-default.btn-flat(href='#') Sign out
+      .main-sidebar
+          // Inner sidebar
+          .sidebar
+              // user panel (Optional)
+              .user-panel
+                  .pull-left.image
+                      img.img-circle(src='/adminlte/img/user2-160x160.jpg', alt='User Image')
+                  .pull-left.info
+                      p User Name
+                      a(href='#')
+                          i.fa.fa-circle.text-success
+                          |  Online
+              // /.user-panel
+              // Search Form (Optional)
+              form.sidebar-form(action='#', method='get')
+                  .input-group
+                      input.form-control(type='text', name='q', placeholder='Search...')
+                      span.input-group-btn
+                          button#search-btn.btn.btn-flat(type='submit', name='search')
+                              i.fa.fa-search
+              // /.sidebar-form
+              // Sidebar Menu
+              ul.sidebar-menu
+                  li.header HEADER
+                  // Optionally, you can add icons to the links
+                  li.active
+                      a(href='#')
+                          span Link
+                      | <
+                  li
+                      a(href='#')
+                          span Another Link
+                  li.treeview
+                      a(href='#')
+                          span Multilevel
+                          i.fa.fa-angle-left.pull-right
+                      ul.treeview-menu
+                          li
+                              a(href='#') Link in level 2
+                          li
+                              a(href='#') Link in level 2
+    block content
+
+
+
+        Control Sidebar

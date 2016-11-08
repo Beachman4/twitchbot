@@ -1,0 +1,40 @@
+body {
+  width: 100%;
+  height: 100%; }
+
+a, p, h1, h2, h3, h4, h5, h6, label, input, small, li, ul, b, div, body {
+  font-family: 'Monserrat', sans-serif !important; }
+
+.btn-twitch {
+  color: #ffffff;
+  background-color: #6441a5;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-twitch:focus,
+.btn-twitch.focus {
+  color: #ffffff !important;
+  background-color: #6034b1;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-twitch:hover {
+  color: #ffffff !important;
+  background-color: #4b307b;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-twitch:active,
+.btn-twitch.active,
+.open > .dropdown-toggle.btn-twitch {
+  color: #ffffff !important;
+  background-color: #4b307b;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-twitch:active,
+.btn-twitch.active,
+.open > .dropdown-toggle.btn-twitch {
+  background-image: none; }
+
+.btn-twitch .badge {
+  color: #6441a5;
+  background-color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

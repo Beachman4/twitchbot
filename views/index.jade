@@ -1,0 +1,36 @@
+html
+  head
+    title Login!
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/adminlte/css/AdminLTE.min.css')
+    link(rel='stylesheet', href='/adminlte/css/skins/_all-skins.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat')
+    link(rel='stylesheet', href='/plugins/iCheck/square/blue.css')
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    script(src='/adminlte/js/app.min.js')
+    script(src='/plugins/iCheck/icheck.min.js')
+  body.hold-transition.login-page
+    .login-box
+      .login-logo
+        b Yoda
+        | Bot
+      // /.login-logo
+      .login-box-body
+        p.login-box-msg Sign in to Twitch to access the bot
+        .social-auth-links.text-center
+          a.btn.btn-block.btn-social.btn-twitch.btn-flat(href='https://api.twitch.tv/kraken/oauth2/authorize?response_type=code&client_id=' + client + '&redirect_uri=http://localhost/twitch_confirm&scope=user_read+channel_editor+channel_commercial')
+            i.fa.fa-twitch
+            |  Go to Twitch
+        p &copy; The Nine Grounds | Aylon Armstrong
+    script.
+      $(function() {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%'
+        });
+      });
